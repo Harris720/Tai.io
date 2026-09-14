@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- 复古红色渐变 -->
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B33A3A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C8102E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A02828;stop-opacity:1" />
+    </linearGradient>
+    <!-- 复古纸张纹理滤镜 -->
+    <filter id="vintageTexture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="5"/>
+      <feColorMatrix values="0 0 0 0 0.78
+                             0 0 0 0 0.10
+                             0 0 0 0 0.10
+                             0 0 0 0.15 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+      <feComposite in="SourceGraphic" operator="over"/>
+    </filter>
+    <!-- 扇形路径 -->
+    <path id="fanPath" d="M 200 110 L 60 60 Q 200 30 340 60 Z" fill="url(#redGradient)" stroke="#8B0000" stroke-width="2"/>
+  </defs>
+
+  <!-- 整体背景（透明） -->
+  <rect width="400" height="320" fill="none"/>
+
+  <!-- 上方扇形 -->
+  <use href="#fanPath" filter="url(#vintageTexture)"/>
+
+  <!-- 扇形上的中文字符：喜臨門 -->
+  <text x="200" y="92" font-family="'Noto Serif SC', 'STSong', serif" font-size="38" font-weight="900"
+        fill="#FFF8E7" text-anchor="middle" letter-spacing="6" filter="url(#vintageTexture)">喜臨門</text>
+
+  <!-- 扇形装饰边框 -->
+  <path d="M 200 110 L 60 60 Q 200 30 340 60 Z" fill="none" stroke="#FFF8E7" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- 中间 Tai Pan 文字（仿照复古招牌风格）-->
+  <g transform="translate(200, 180)">
+    <!-- 文字底板 -->
+    <rect x="-140" y="-45" width="280" height="90" fill="url(#redGradient)" stroke="#8B0000" stroke-width="3" rx="4" filter="url(#vintageTexture)"/>
+    <!-- 内边框 -->
+    <rect x="-130" y="-35" width="260" height="70" fill="none" stroke="#FFF8E7" stroke-width="1.5" opacity="0.5" rx="2"/>
+
+    <!-- "Tai Pan" 文字 -->
+    <text x="0" y="12" font-family="'Cinzel', 'Times New Roman', serif" font-size="58" font-weight="900"
+          fill="#FFF8E7" text-anchor="middle" letter-spacing="3" filter="url(#vintageTexture)">Tai Pan</text>
+  </g>
+
+  <!-- 下方 CHINESE RESTAURANT 副标题框 -->
+  <g transform="translate(200, 255)">
+    <rect x="-110" y="-18" width="220" height="36" fill="url(#redGradient)" stroke="#8B0000" stroke-width="2" rx="2" filter="url(#vintageTexture)"/>
+    <text x="0" y="8" font-family="'Cinzel', 'Arial', sans-serif" font-size="16" font-weight="700"
+          fill="#FFF8E7" text-anchor="middle" letter-spacing="4">CHINESE RESTAURANT</text>
+  </g>
+
+  <!-- 装饰星 -->
+  <g fill="#FFF8E7" opacity="0.7">
+    <circle cx="50" cy="40" r="2"/>
+    <circle cx="350" cy="40" r="2"/>
+    <circle cx="40" cy="100" r="1.5"/>
+    <circle cx="360" cy="100" r="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tai Pan Chinese Restaurant - Liverpool | Authentic Chinese Cuisine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="logo.svg" alt="Tai Pan Chinese Restaurant Logo" class="logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">首页 Home</a></li>
+                <li><a href="#about">关于 About</a></li>
+                <li><a href="#menu">菜单 Menu</a></li>
+                <li><a href="#reservation">预定 Reservation</a></li>
+                <li><a href="#preorder">提前点餐 Pre-order</a></li>
+                <li><a href="#news">足球新闻 News</a></li>
+                <li><a href="#contact">联系 Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首屏 Hero -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="lantern-left"></div>
+            <div class="lantern-right"></div>
+            <img src="logo.svg" alt="Tai Pan Logo" class="hero-logo">
+            <h2 class="hero-title">
+                <span class="title-cn">太板中餐馆</span>
+                <span class="title-en">Tai Pan Chinese Restaurant</span>
+            </h2>
+            <p class="hero-subtitle">利物浦最地道的粤式风味 · Authentic Cantonese Cuisine in Liverpool</p>
+            <p class="hero-desc">传承三十年的经典手艺 · Established with Tradition Since 1990</p>
+            <div class="hero-btns">
+                <a href="#reservation" class="btn btn-primary">预定座位 Book a Table</a>
+                <a href="#menu" class="btn btn-secondary">查看菜单 View Menu</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动 Scroll Down</span>
+            <div class="arrow-down"></div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">❋</span>
+                <h2>关于我们 About Us</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600" alt="Tai Pan Restaurant Interior">
+                </div>
+                <div class="about-text">
+                    <h3>欢迎来到 Tai Pan</h3>
+                    <p>位于英国利物浦市中心的 <strong>Tai Pan Chinese Restaurant</strong>，自1990年起为顾客提供正宗粤菜佳肴。餐厅秉承"传承经典、追求卓越"的理念，由资深粤菜大师主理。</p>
+                    <p>Welcome to <strong>Tai Pan Chinese Restaurant</strong>, located in the heart of Liverpool. Since 1990, we have been serving authentic Cantonese cuisine with passion and tradition.</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">🥢</span>
+                            <div>
+                                <h4>地道粤菜 Authentic Cantonese</h4>
+                                <p>由广州请来的资深厨师团队主理</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🍜</span>
+                            <div>
+                                <h4>新鲜食材 Fresh Ingredients</h4>
+                                <p>每日精选优质食材，保证菜品新鲜</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🏮</span>
+                            <div>
+                                <h4>中式装潢 Chinese Decor</h4>
+                                <p>传统中式风格，营造温馨用餐氛围</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⚽</span>
+                            <div>
+                                <h4>毗邻球场 Near Football Stadiums</h4>
+                                <p>餐厅大屏幕播放足球赛事</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 菜单 Menu -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">❋</span>
+                <h2>菜单精选 Our Menu</h2>
+                <p class="section-subtitle">精选正宗粤菜 · Authentic Cantonese Cuisine</p>
+                <div class="divider"></div>
+            </div>
+
+            <!-- 菜单分类 -->
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="dimsum">点心 Dim Sum</button>
+                <button class="tab-btn" data-category="starter">前菜 Starters</button>
+                <button class="tab-btn" data-category="soup">汤类 Soups</button>
+                <button class="tab-btn" data-category="chicken">鸡肉 Chicken</button>
+                <button class="tab-btn" data-category="beef">牛肉 Beef</button>
+                <button class="tab-btn" data-category="pork">猪肉 Pork</button>
+                <button class="tab-btn" data-category="duck">鸭肉 Duck</button>
+                <button class="tab-btn" data-category="lamb">羊肉 Lamb</button>
+                <button class="tab-btn" data-category="prawn">大虾 Prawn</button>
+                <button class="tab-btn" data-category="seafood">海鲜 Seafood</button>
+                <button class="tab-btn" data-category="vegetarian">素菜 Vegetarian</button>
+                <button class="tab-btn" data-category="banquet">套餐 Banquet</button>
+            </div>
+
+            <!-- 菜品网格 -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- 由JS动态生成 -->
+            </div>
+
+            <!-- 套餐菜单 -->
+            <div class="banquet-section" id="banquetSection">
+                <h3>🎉 宴会套餐 Banquet Menus</h3>
+                <div class="banquet-grid">
+                    <div class="banquet-card">
+                        <h4>TAI PAN BANQUET</h4>
+                        <p class="banquet-price">£36 per person (min 2)</p>
+                        <ul>
+                            <li>鸡玉米汤 Chicken Sweetcorn Soup</li>
+                            <li>拼盘前菜 Combination Starter</li>
+                            <li>北京烤鸭 Peking Aromatic Crispy Duck</li>
+                            <li>主菜 Main Course (按人数配置)</li>
+                        </ul>
+                    </div>
+                    <div class="banquet-card featured">
+                        <span class="badge">推荐 Popular</span>
+                        <h4>NOBLE BANQUET</h4>
+                        <p class="banquet-price">£39 per person (min 2)</p>
+                        <ul>
+                            <li>鸡玉米汤 Chicken & Sweetcorn Soup</li>
+                            <li>精选拼盘 Combination Starter</li>
+                            <li>北京烤鸭 Peking Aromatic Crispy Duck</li>
+                            <li>主菜 Main Course (按人数配置)</li>
+                        </ul>
+                    </div>
+                    <div class="banquet-card">
+                        <h4>ROYAL BANQUET</h4>
+                        <p class="banquet-price">£42 per person (min 2)</p>
+                        <ul>
+                            <li>鸡玉米汤 Chicken and Sweetcorn Soup</li>
+                            <li>点心拼盘 Dim Sum Combination</li>
+                            <li>北京烤鸭 Peking Aromatic Crispy Duck</li>
+                            <li>主菜 Main Course (按人数配置)</li>
+                        </ul>
+                    </div>
+                    <div class="banquet-card">
+                        <h4>SET DINNER</h4>
+                        <p class="banquet-price">£28 per person (min 2)</p>
+                        <ul>
+                            <li>鸡玉米汤 Chicken and Sweetcorn Soup</li>
+                            <li>海苔、春卷、炸云吞</li>
+                            <li>主菜 Main Course (按人数配置)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商务午餐 -->
+            <div class="business-lunch">
+                <h3>💼 商务午餐 Business Lunch</h3>
+                <div class="lunch-grid">
+                    <div class="lunch-card">
+                        <h4>BUSINESS LUNCH</h4>
+                        <p class="lunch-price">£11.50 per person</p>
+                        <p class="lunch-note">(Not available for take away)</p>
+                        <p>鸡玉米汤 + 主菜 8选1 + 米饭或炒饭</p>
+                        <p class="lunch-time">周一至周五 12:00pm - 2:00pm</p>
+                    </div>
+                    <div class="lunch-card highlight">
+                        <h4>EXECUTIVE BUSINESS LUNCH</h4>
+                        <p class="lunch-price">£14.50 per person</p>
+                        <p class="lunch-note">(Not available for take away)</p>
+                        <p>鸡玉米汤 + 特制前菜 + 主菜 8选1 + 米饭或炒饭</p>
+                        <p class="lunch-time">周一至周五 12:00pm - 2:00pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 预定座位 -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">❋</span>
+                <h2>预定座位 Table Reservation</h2>
+                <p class="section-subtitle">选择您心仪的桌型 · Choose Your Preferred Table</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="reservation-container">
+                <!-- 桌型选择 -->
+                <div class="table-types">
+                    <h3>桌型选择 Table Type</h3>
+                    <div class="table-cards">
+                        <div class="table-card" data-table="small">
+                            <div class="table-icon">🪑</div>
+                            <h4>小桌 Small Table</h4>
+                            <p>适合 2 人</p>
+                            <p class="table-suitable">Suitable for 2 people</p>
+                            <span class="table-badge">温馨浪漫</span>
+                        </div>
+                        <div class="table-card selected" data-table="medium">
+                            <div class="table-icon">🪑🪑</div>
+                            <h4>中桌 Medium Table</h4>
+                            <p>适合 4 人</p>
+                            <p class="table-suitable">Suitable for 4 people</p>
+                            <span class="table-badge">家庭聚餐</span>
+                        </div>
+                        <div class="table-card" data-table="large">
+                            <div class="table-icon">🪑🪑🪑</div>
+                            <h4>大桌 Large Table</h4>
+                            <p>适合 6-8 人</p>
+                            <p class="table-suitable">Suitable for 6-8 people</p>
+                            <span class="table-badge">聚会首选</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 预定表单 -->
+                <form class="reservation-form" id="reservationForm">
+                    <h3>预定信息 Booking Details</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>姓名 Name *</label>
+                            <input type="text" name="name" required placeholder="您的姓名 Your name">
+                        </div>
+                        <div class="form-group">
+                            <label>电话 Phone *</label>
+                            <input type="tel" name="phone" required placeholder="+44 7XXX XXX XXX">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>邮箱 Email</label>
+                            <input type="email" name="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label>人数 Party Size *</label>
+                            <select name="party_size" required>
+                                <option value="">请选择 Select</option>
+                                <option value="1">1 person</option>
+                                <option value="2" selected>2 people</option>
+                                <option value="3">3 people</option>
+                                <option value="4">4 people</option>
+                                <option value="5">5 people</option>
+                                <option value="6">6 people</option>
+                                <option value="7">7 people</option>
+                                <option value="8">8+ people</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>日期 Date *</label>
+                            <input type="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>时间 Time *</label>
+                            <select name="time" required>
+                                <option value="">请选择 Select</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="12:30">12:30 PM</option>
+                                <option value="13:00">13:00 PM</option>
+                                <option value="13:30">13:30 PM</option>
+                                <option value="18:00">18:00 PM</option>
+                                <option value="18:30">18:30 PM</option>
+                                <option value="19:00" selected>19:00 PM</option>
+                                <option value="19:30">19:30 PM</option>
+                                <option value="20:00">20:00 PM</option>
+                                <option value="20:30">20:30 PM</option>
+                                <option value="21:00">21:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>特殊要求 Special Requests</label>
+                        <textarea name="requests" rows="3" placeholder="生日庆祝、素食、过敏等... Birthday, vegetarian, allergies etc."></textarea>
+                    </div>
+                    <div class="selected-table-display">
+                        <span>已选桌型 Selected Table: </span>
+                        <strong id="selectedTableText">中桌 / Medium Table (4 people)</strong>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">确认预定 Confirm Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 提前点餐 -->
+    <section id="preorder" class="preorder">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">❋</span>
+                <h2>提前预定菜品 Pre-order Dishes</h2>
+                <p class="section-subtitle">提前选择菜品，到店即可享用 · Pre-order & enjoy immediately</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="preorder-container">
+                <!-- 菜品选择 -->
+                <div class="preorder-dishes">
+                    <h3>选择菜品 Choose Dishes</h3>
+                    <div class="preorder-search">
+                        <input type="text" id="dishSearch" placeholder="搜索菜品 Search dishes...">
+                    </div>
+                    <div class="dish-list" id="dishList">
+                        <!-- 动态生成 -->
+                    </div>
+                </div>
+
+                <!-- 购物车 -->
+                <div class="cart">
+                    <h3>我的订单 My Order</h3>
+                    <div class="cart-items" id="cartItems">
+                        <p class="empty-cart">购物车空空如也 Your cart is empty</p>
+                    </div>
+                    <div class="cart-footer">
+                        <div class="cart-total">
+                            <span>总计 Total:</span>
+                            <strong id="cartTotal">£0.00</strong>
+                        </div>
+                        <button class="btn btn-primary btn-block" id="checkoutBtn">提交订单 Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 足球新闻 -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">❋</span>
+                <h2>利物浦足球新闻 Liverpool Football News</h2>
+                <p class="section-subtitle">追踪利物浦与埃弗顿最新动态 · Latest Liverpool & Everton News</p>
+                <div class="divider"></div>
+            </div>
+
+            <!-- 球队切换 -->
+            <div class="team-tabs">
+                <button class="team-tab active" data-team="all">
+                    <span class="team-logo">⚽</span> 全部 All
+                </button>
+                <button class="team-tab" data-team="liverpool">
+                    <span class="team-logo red">🔴</span> 利物浦 Liverpool
+                </button>
+                <button class="team-tab" data-team="everton">
+                    <span class="team-logo blue">🔵</span> 埃弗顿 Everton
+                </button>
+            </div>
+
+            <!-- 新闻动态滚动 -->
+            <div class="news-ticker">
+                <div class="ticker-label">
+                    <span class="live-dot"></span> 实时滚动 LIVE
+                </div>
+                <div class="ticker-content">
+                    <span id="tickerText">正在加载新闻... Loading news...</span>
+                </div>
+            </div>
+
+            <!-- 新闻列表 -->
+            <div class="news-grid" id="newsGrid">
+                <!-- 动态生成 -->
+            </div>
+
+            <div class="refresh-news">
+                <button class="btn btn-secondary" id="refreshNews">
+                    <span class="refresh-icon">↻</span> 刷新新闻 Refresh News
+                </button>
+                <p class="last-update">最后更新 Last Update: <span id="lastUpdate"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">❋</span>
+                <h2>联系我们 Contact Us</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <span class="contact-icon">📍</span>
+                    <h4>地址 Address</h4>
+                    <p>W H Lung Building, Great Howard Street<br>Liverpool L5 9TZ<br>United Kingdom</p>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-icon">📞</span>
+                    <h4>电话 Phone</h4>
+                    <p>+44 161 236 4848</p>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-icon">✉️</span>
+                    <h4>邮箱 Email</h4>
+                    <p>info@taipan-liverpool.co.uk</p>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-icon">🕐</span>
+                    <h4>营业时间 Opening Hours</h4>
+                    <p>周一至周日<br>Mon-Sun: 12:00 - 23:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.svg" alt="Tai Pan Logo" class="footer-logo">
+                    <p>传承经典粤菜 · Authentic Cantonese Cuisine</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">首页 Home</a>
+                    <a href="#menu">菜单 Menu</a>
+                    <a href="#reservation">预定 Reservation</a>
+                    <a href="#news">新闻 News</a>
+                </div>
+                <div class="footer-social">
+                    <h4>关注我们 Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">𝕏</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Tai Pan Chinese Restaurant Liverpool. All Rights Reserved.</p>
+                <p>Designed with ❤️ & 🥢</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 浮动消息提示 -->
+    <div class="toast" id="toast"></div>
+
+    <!-- 弹窗 Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
